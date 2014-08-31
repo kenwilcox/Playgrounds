@@ -38,23 +38,6 @@ class TipCalculator {
     return subtotal * tipPct
   }
   
-//  func printPossibleTips() {
-//    //println("15%: \(calcTipWithTipPct(0.15))")
-//    //println("18%: \(calcTipWithTipPct(0.18))")
-//    //println("20%: \(calcTipWithTipPct(0.20))")
-//    
-//    let possibleTipsInferred = [0.15, 0.18, 0.20]
-//    //let possibleTipsExplicit:[Double] = [0.15, 0.18, 0.20]
-//    //for possibleTip in possibleTipsInferred {
-//    //  println("\(possibleTip*100)%: \(calcTipWithTipPct(possibleTip))")
-//    //}
-//    // Or you can do loops like this
-//    for i in 0..<possibleTipsInferred.count {
-//      let possibleTip = possibleTipsInferred[i]
-//      println("\(possibleTip*100)%: \(calcTipWithTipPct(possibleTip))")
-//    }
-//  }
-  
   func returnPossibleTips() -> [Int: Double] {
     let possibleTipsInferred = [0.15, 0.18, 0.20]
     //let possibleTipsExplicit:[Double] = [0.15, 0.18, 0.20]
