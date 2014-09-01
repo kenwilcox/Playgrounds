@@ -1,3 +1,4 @@
+// hrm, need @objc for the optional parameter
 @objc protocol Speaker {
   func Speak()
   optional func TellJoke()
