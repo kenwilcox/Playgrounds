@@ -53,3 +53,23 @@ class TipCalculator {
 
 let tipCalc = TipCalculator(total: 33.25, taxPct: 0.06)
 tipCalc.returnPossibleTips()
+
+let tipAndTotal = (4.00, 25.19)
+tipAndTotal.0
+tipAndTotal.1
+// That's ugly, how about by name
+// just like python, cool
+let(theTipAmount, theTotal) = tipAndTotal
+theTipAmount
+theTotal
+
+// How About Named Tuples
+let tipAndTotalNamed = (tipAmt: 4.00, total:25.19)
+tipAndTotalNamed.tipAmt
+tipAndTotalNamed.total
+
+// By index still works too - weird.
+tipAndTotalNamed.0
+tipAndTotalNamed.1
+
+
