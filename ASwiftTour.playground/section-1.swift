@@ -19,3 +19,26 @@ let oranges = 5
 let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 
+let myName = "Jose Jones"
+let debt = 14.76
+let greeting = "Hello, \(myName), you owe $\(debt)"
+
+// Collections
+var shoppingList = ["catfish", "water", "tulips", "blue paint"]
+shoppingList[1] = "bottle of water"
+
+// using Firefly references in documentation
+// major points here!
+var occupations = [
+  "Malcom": "Captain",
+  "Kaylee": "Mechanic",
+]
+occupations["Jayne"] = "Public Relations"
+
+// What would be the point of these? Constant empty?
+let emptyArray = [String]()
+let emptyDictionary = [String: Float]()
+//shoppingList = []
+//occupations = [:]
+
+// Constol Flow
