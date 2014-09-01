@@ -9,7 +9,7 @@ class Vicki: Speaker {
     println("Hello, I am Vicki!")
   }
   func TellJoke() {
-    println("Q: What did Shshi A say to Sushi B?")
+    println("Q: What did Sushi A say to Sushi B?")
   }
 }
 
@@ -46,3 +46,26 @@ speaker.TellJoke?()
 speaker = Dog()
 speaker.TellJoke?()
 
+
+// Delegates
+class DateSimulator {
+  let a:Speaker
+  let b:Speaker
+  
+  init(a:Speaker, b:Speaker) {
+    self.a = a
+    self.b = b
+  }
+  
+  func simulate() {
+    println("Off to dinner...")
+    a.Speak()
+    b.Speak()
+    println("Walking back home...")
+    a.TellJoke?()
+    b.TellJoke?()
+  }
+}
+
+let sim = DateSimulator(a:Vicki(), b:Ray())
+sim.simulate()
