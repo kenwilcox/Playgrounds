@@ -46,11 +46,25 @@ speaker.TellJoke?()
 speaker = Dog()
 speaker.TellJoke?()
 
+protocol DateSimulatorDelegate {
+  func dateSimulatorDidStart(sim:DateSimulator, a:Speaker, b:Speaker)
+  func dateSimulatorDidEnd(sim:DateSimulator, a:Speaker, b:Speaker)
+}
+
+class LoggingDateSimulator:DateSimulatorDelegate {
+  func dateSimulatorDidStart(sim:DateSimulator, a:Speaker, b:Speaker) {
+    println("Date started!")
+  }
+  func dateSimulatorDidEnd(sim:DateSimulator, a:Speaker, b:Speaker) {
+    println("Date ended!")
+  }
+}
 
 // Delegates
 class DateSimulator {
   let a:Speaker
   let b:Speaker
+  var delegate: DateSimulatorDelegate?
   
   init(a:Speaker, b:Speaker) {
     self.a = a
@@ -58,14 +72,17 @@ class DateSimulator {
   }
   
   func simulate() {
+    self.delegate?.dateSimulatorDidStart(self, a: self.a, b: self.b)
     println("Off to dinner...")
     a.Speak()
     b.Speak()
     println("Walking back home...")
     a.TellJoke?()
     b.TellJoke?()
+    self.delegate?.dateSimulatorDidEnd(self, a: self.a, b: self.b)
   }
 }
 
 let sim = DateSimulator(a:Vicki(), b:Ray())
+sim.delegate = LoggingDateSimulator()
 sim.simulate()
