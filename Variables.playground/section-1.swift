@@ -1,7 +1,5 @@
 // messing with variables
 
-import Foundation
-
 var firstInteger:Int = 0, secondInteger:Int = 29
 
 var thirdInteger:Float = -1_000_858.12345678912345678
