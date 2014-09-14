@@ -9,7 +9,7 @@ for score in individualScores {
     teamScore += 1
   }
 }
-teamScore
+println(teamScore)
 
 var optionalString: String? = "Hello"
 optionalString == nil
@@ -53,31 +53,36 @@ for (kind, numbers) in interestingNumbers {
     }
   }
 }
-largest
-largestKind
+println(largest)
+println(largestKind)
 
 // - while
 var n = 2
 while n < 100 {
   n = n * 2
 }
-n
+println(n)
 
 var m = 2
 do {
   m = m * 2
 } while m < 100
-m
+println(m)
 
 // - loops
 var firstForLoop = 0
 for i in 0..<4 {
   firstForLoop += 1
 }
-firstForLoop
+println(firstForLoop)
 
 var secondForLoop = 0
 for var i = 0; i < 4; ++i {
   secondForLoop += 1
 }
-secondForLoop
+println(secondForLoop)
+
+var mySpeed:Int = 50
+if mySpeed & mySpeed < 70 {
+  println("Cruze ON")
+}
