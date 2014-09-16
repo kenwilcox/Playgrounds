@@ -86,3 +86,9 @@ var mySpeed:Int = 50
 if mySpeed & mySpeed < 70 {
   println("Cruze ON")
 }
+
+
+var names = ["Bob", "Susan", "Jerry", "Smith"]
+for (index, name) in enumerate(names) {
+  println("Index: \(index) Name: \(name)")
+}
