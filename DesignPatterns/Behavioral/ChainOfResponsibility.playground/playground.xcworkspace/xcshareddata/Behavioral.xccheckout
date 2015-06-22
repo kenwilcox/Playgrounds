@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65FF70BF-7988-4995-8007-015F60D4B1F1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Behavioral</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>63452DEE328CBE60CA73F563D9A3C3653B803D9D</key>
+		<string>https://github.com/kenwilcox/Playgrounds.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DesignPatterns/Behavioral.playground</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>63452DEE328CBE60CA73F563D9A3C3653B803D9D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kenwilcox/Playgrounds.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>63452DEE328CBE60CA73F563D9A3C3653B803D9D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>63452DEE328CBE60CA73F563D9A3C3653B803D9D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Playgrounds</string>
+		</dict>
+	</array>
+</dict>
+</plist>
