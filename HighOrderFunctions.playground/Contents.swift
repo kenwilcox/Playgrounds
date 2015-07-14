@@ -50,3 +50,19 @@ print(ret)
 ret = averageOfFunction(5.0, 18.2, {$0 * $0})
 print(ret)
 
+
+
+// Map
+
+// The ugly way
+var moneyArray = [10, 20, 45, 32]
+var stringsArray: [String] = []
+for money in moneyArray {
+  stringsArray.append("$\(money)")
+}
+print(stringsArray)
+
+// the map way
+var mapStrings = moneyArray.map({money in "¥\(money)"})
+print(mapStrings)
+
