@@ -66,3 +66,43 @@ print(stringsArray)
 var mapStrings = moneyArray.map({money in "¥\(money)"})
 print(mapStrings)
 
+
+
+// Filter
+// the ugly way
+var filteredArray: [Int] = []
+for money in moneyArray {
+  if (money > 30) {
+    filteredArray += [money]
+  }
+}
+print(filteredArray)
+
+// the filtered way
+var filteredMoney = moneyArray.filter({$0 > 30})
+print(filteredMoney)
+
+
+
+// Reduce
+// the ugly way
+var sum = 0
+for money in moneyArray {
+  sum += money
+}
+print(sum)
+
+var product = 1
+for money in moneyArray {
+  product *= money
+}
+print(product)
+
+// the reduce way
+sum = moneyArray.reduce(0, combine: {$0 + $1})
+print(sum)
+
+// or
+sum = moneyArray.reduce(0, combine: +)
+print(sum)
+
