@@ -119,15 +119,16 @@ var twice = applyTwice({x in x * x}, x: 5)
 print(twice)
 
 // Write a function applyKTimes(f:(Float -> Float),x:Float,k:Int) -> Float that takes a function f and a float x and aplies f to x k times
+// Using applyKTimes write a function that raises x to the kth power
 func applyKTimes(f:(Float -> Float), x:Float, k:Int) -> Float {
-  var result = x
-  for _ in 1..<k {
-    result = f(result)
+  var result: Float = 1.0
+  for _ in 0..<k {
+    result = result * f(x)
   }
   return result
 }
 
-var ktimes = applyKTimes({x in x + x}, x: 4.0, k: 2)
+var ktimes = applyKTimes({x in x}, x: 5.0, k: 4)
 print("ktimes = \(ktimes)")
 
 
@@ -138,4 +139,5 @@ var evenSum = Array(1...10)
 
 print(evenSum)
 
-print((4+4) + (4+4))
+print (4*4 + 4*4 + 4*4 + 4*4 + 4*4)
+print (5 * 5 * 5 * 5)
