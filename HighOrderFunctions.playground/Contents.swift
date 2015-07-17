@@ -106,3 +106,36 @@ print(sum)
 sum = moneyArray.reduce(0, combine: +)
 print(sum)
 
+
+
+
+// Challenges
+// Write a function applyTwice(f:(Float -> Float),x:Float) -> Float that takes a function f and a float x and aplies f to x twice i.e. f(f(x))
+func applyTwice(f:(Float -> Float), x:Float) -> Float {
+  return f(f(x))
+}
+
+var twice = applyTwice({x in x * x}, x: 5)
+print(twice)
+
+// Write a function applyKTimes(f:(Float -> Float),x:Float,k:Int) -> Float that takes a function f and a float x and aplies f to x k times
+func applyKTimes(f:(Float -> Float), x:Float, k:Int) -> Float {
+  var result = x
+  for _ in 1..<k {
+    result = f(result)
+  }
+  return result
+}
+
+var ktimes = applyKTimes({x in x + x}, x: 4.0, k: 2)
+print("ktimes = \(ktimes)")
+
+
+// Just playing around
+var evenSum = Array(1...10)
+  .filter { (number) in number % 2 == 0 }
+  .reduce(0) { (total, number) in total + number }
+
+print(evenSum)
+
+print((4+4) + (4+4))
