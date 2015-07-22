@@ -141,3 +141,16 @@ print(evenSum)
 
 print (4*4 + 4*4 + 4*4 + 4*4 + 4*4)
 print (5 * 5 * 5 * 5)
+
+
+
+// Given an array of Users which have properties name:String and age:Int write a map function that returns an array of strings consisting of the user’s names
+
+struct User {
+  var name = "Unknown"
+  var age = 0
+}
+
+let users = [User(name: "John", age:10), User(name:"Doe", age: 14)]
+var names = users.map{$0.name}
+print(names)
