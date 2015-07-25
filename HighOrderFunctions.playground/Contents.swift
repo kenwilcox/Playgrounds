@@ -154,3 +154,14 @@ struct User {
 let users = [User(name: "John", age:10), User(name:"Doe", age: 14)]
 var names = users.map{$0.name}
 print(names)
+
+
+// Given an array of of dictionaries containing keys for “name” and “age” write a map function that returns an array of users created from it
+print("\nGiven an array of of dictionaries containing keys for “name” and “age” write a map function that returns an array of users created from it\n")
+var data = [["name":"John", "age":10], ["name":"Doe", "age":14], ["name":"Young", "age":12]]
+print(data)
+var usersFromData = data.map{User(name: $0["name"] as! String, age: $0["age"] as! Int)}
+print(usersFromData)
+print("or pretty printed")
+var prettyUsers = usersFromData.map({user in "\(user.name): \(user.age)"})
+print(prettyUsers)
