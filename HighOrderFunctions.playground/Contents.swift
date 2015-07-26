@@ -207,3 +207,10 @@ var bigest = ints.reduce(Int.min, combine: {max($0,$1)})
 print(bigest)
 
 
+// You could implement a mean function using the reduce operation {$0 + $1 / Float(array.count)}. Why is this a bad idea?
+func mean(array: [Float]) -> Float {
+  return array.reduce(0.0, combine: {$0 + $1}) / Float(array.count)
+}
+// the division occurs for each set - break, do the division last
+print(mean([1.3, 3.1, 3.1415, 9,58]))
+
