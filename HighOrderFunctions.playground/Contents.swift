@@ -165,3 +165,11 @@ print(usersFromData)
 print("or pretty printed")
 var prettyUsers = usersFromData.map({user in "\(user.name): \(user.age)"})
 print(prettyUsers)
+
+// Given an array of numbers write a filter method that only selects odd integers
+print("\nGiven an array of numbers write a filter method that only selects odd integers\n")
+let numbersArray = [1,4,32,6,3,7,8,54,34,2,33,35,75,57,99,10,14,23,97,61]
+// just for giggles, let's sort it too
+let oddIntegers = numbersArray.filter({$0 % 2 != 0}).sort({$0 < $1})
+print(oddIntegers)
+
