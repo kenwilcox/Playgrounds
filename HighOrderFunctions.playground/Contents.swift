@@ -191,3 +191,10 @@ let views = [UIView(), UILabel(), UIButton(), UILabel(), UITextField(), UILabel(
 let labels = views.filter{$0 is UILabel}
 print("\(labels.count) labels: \(labels)")
 
+
+// Write a reduce function that takes an array of strings and returns a single string consisting of the given strings separated by newlines
+print("\nWrite a reduce function that takes an array of strings and returns a single string consisting of the given strings separated by newlines")
+let strings = ["The quick", "brown fox", "jumped over", "the lazy", "dog!"]
+print(strings)
+print(strings.reduce("", combine: {"\($0)\n\($1)"}))
+
