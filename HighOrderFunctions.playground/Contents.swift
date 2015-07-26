@@ -180,7 +180,7 @@ let stringArray = ["my", "numbers", "are", "10", "14", "33", "42", "and", "60"]
 func isNumber(str: String) -> Int? {
   return Int(str)
 }
-let intOnly = stringArray.filter({str in isNumber(str) != nil})
+let intOnly = stringArray.filter{isNumber($0) != nil}
 print(stringArray)
 print(intOnly)
 
