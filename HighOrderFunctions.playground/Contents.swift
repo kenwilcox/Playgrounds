@@ -171,5 +171,16 @@ print("\nGiven an array of numbers write a filter method that only selects odd i
 let numbersArray = [1,4,32,6,3,7,8,54,34,2,33,35,75,57,99,10,14,23,97,61]
 // just for giggles, let's sort it too
 let oddIntegers = numbersArray.filter({$0 % 2 != 0}).sort({$0 < $1})
+print(numbersArray)
 print(oddIntegers)
+
+// Given an array of strings write a filter function that selects only strings that can be converted to Ints
+print("\nGiven an array of strings write a filter function that selects only strings that can be converted to Ints\n")
+let stringArray = ["my", "numbers", "are", "10", "14", "33", "42", "and", "60"]
+func isNumber(str: String) -> Int? {
+  return Int(str)
+}
+let intOnly = stringArray.filter({str in isNumber(str) != nil})
+print(stringArray)
+print(intOnly)
 
