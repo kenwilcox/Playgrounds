@@ -198,3 +198,12 @@ let strings = ["The quick", "brown fox", "jumped over", "the lazy", "dog!"]
 print(strings)
 print(strings.reduce("", combine: {"\($0)\n\($1)"}))
 
+
+// Write a reduce function that finds the largest element in an array of Ints
+print("\nWrite a reduce function that finds the largest element in an array of Ints")
+let ints = [1,0, 100, 48, 37, 23, 101, 14, 18, 99, 6, 12, 5, -102]
+print(ints)
+var bigest = ints.reduce(Int.min, combine: {max($0,$1)})
+print(bigest)
+
+
