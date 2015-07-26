@@ -184,3 +184,10 @@ let intOnly = stringArray.filter{isNumber($0) != nil}
 print(stringArray)
 print(intOnly)
 
+
+// Given an array of UIViews write a filter function that selects only those views that are a subclass of UILabel
+print("\nGiven an array of UIViews write a filter function that selects only those views that are a subclass of UILabel\n")
+let views = [UIView(), UILabel(), UIButton(), UILabel(), UITextField(), UILabel()]
+let labels = views.filter{$0 is UILabel}
+print("\(labels.count) labels: \(labels)")
+
