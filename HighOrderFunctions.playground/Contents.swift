@@ -214,3 +214,20 @@ func mean(array: [Float]) -> Float {
 // the division occurs for each set - break, do the division last
 print(mean([1.3, 3.1, 3.1415, 9,58]))
 
+
+// Fizzbuzz
+func fizzbuzz(n:Int) -> String {
+  switch(n % 3 == 0, n % 5 == 0) {
+  case(true, false):
+    return "Fizz"
+  case(false, true):
+    return "Buzz"
+  case(true, true):
+    return "FizzBuzz"
+  default:
+    return String(n)
+  }
+}
+
+var fzbz = (1...100).map{fizzbuzz($0)}
+print(fzbz)
