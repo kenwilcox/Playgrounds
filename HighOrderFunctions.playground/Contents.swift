@@ -231,3 +231,8 @@ func fizzbuzz(n:Int) -> String {
 
 var fzbz = (1...100).map{fizzbuzz($0)}
 print(fzbz)
+
+// huh, you can do this on one line, if you want
+print((1...100).map{ $0 % 3 == 0 ? $0 % 5 == 0 ? "FizzBuzz" : "Fizz" : $0 % 5 == 0 ? "Buzz" : "\($0)" })
+
+
